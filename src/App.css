@@ -1,0 +1,29 @@
+body::-webkit-scrollbar,
+html::-webkit-scrollbar {
+    display: none
+}
+
+#content::-webkit-scrollbar {
+    width: 0;
+    height: 0
+}
+
+.pulse-button {
+    cursor: pointer;
+    animation: pulse 1s infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
